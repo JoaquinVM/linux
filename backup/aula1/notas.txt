@@ -1,0 +1,14 @@
+Linux
+home: almacenamiento de  archivos
+boot: información de inicio
+etc: ficheros de configuración
+lib: conjunto de bibliotecas donde se encuentran librerías en código ejecutable
+usr: archivos ejecutables
+var: archivos que se van a modificar con el tiempo
+
+cp: copiar archivos
+rm: remover archivos
+mkdir: crear directorios
+rmdir: eliminar directorios
+touch: crear archivos
+ls: listar archivos dentro de un directorio
