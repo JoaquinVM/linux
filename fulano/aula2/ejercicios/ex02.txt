@@ -1,0 +1,3 @@
+ls -s: lista los contenidos de un directorio y su tamaño.
+ls -S: lista los contenidos de un directorio ordenados del mas grande al mas pequeño.
+ls -r: lista los contenidos de un directorio invirtiendo su orden.

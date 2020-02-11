@@ -1,0 +1,3 @@
+cp -f: fuerza la copia del archivo, si un directorio no puede ser abierto, se lo remueve y se crea otro.
+mkdir -v: imprime un mensaje del directorio creado
+rm -i: pregunta al usuario antes de eliminar cada archivo

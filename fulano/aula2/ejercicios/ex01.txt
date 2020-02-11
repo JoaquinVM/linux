@@ -1,0 +1,19 @@
+a)
+ls:	listar contenidos de un directorio
+ls -m:	listar contenidos de un directorio separados por una coma
+ls -l:	listar contenidos de un directorio en formato largo
+ls -l -v: listar contenidos de un directorio en formato largo y ordenados
+
+c)
+ls ai[1-5].c: lista contenidos de un directorio que empiezan por ai, les sigue un numero del 1 al 5 y terminan con .c
+ 	Resultado: ai1.c  ai2.c  ai3.c  ai4.c  ai5.c
+ls [a-c]ii1.c: lista contenidos que de un directorio que empiezan por a, b , c y terminan en ii1.c
+	Resultado: aii1.c  bii1.c  cii1.c
+
+e)
+echo ai[1-5].c: escribe los contenidos de un directorio que empiezan por ai, les sigue un numero del 1 al 5 y terminan con .c
+	Resultado: ai1.c ai2.c ai3.c ai4.c ai5.c
+ls [a-c]ii1.c: lista contenidos que de un directorio que empiezan por a, b , c y terminan en ii1.c
+        Resultado: aii1.c  bii1.c  cii1.c
+
+
