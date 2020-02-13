@@ -37,10 +37,5 @@ Ejecutarlo con nohup:
     Resultado: [1] 2663
 
 Cierre terminal y vuelva abrirlo. El proceso sigue corriendo?
-    Comando: ps
-    Resultado: 	PID TTY          TIME CMD
- 		2740 pts/0    00:00:00 bash
-  		2749 pts/0    00:00:00 ps
-
-    El proceso no sigue corriendo.
+    El proceso sigue corriendo.
 
