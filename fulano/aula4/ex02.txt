@@ -1,0 +1,46 @@
+Cree un script llamado forever.sh:
+    Comando: vim forever.sh
+
+Escriba el siguiente contenido:
+	#!/bin/bash
+	echo "Starting the Infinite Process“
+	while [ 1 ]
+	    do
+	        sleep 60
+		echo "Inside the loop that will go forever"
+	done
+
+Dar permisos de ejecucion:
+    Comando: chmod +x forever.sh
+
+Correr script:
+    Comando: ./forever.sh
+
+Colocar sciprt en background:
+    Comando: Ctrl-Z
+    Respuesta: [1]+  Stopped                 ./forever.sh
+
+Intente encontrarlo con ps:
+    Comando: ps
+    Resultado: 	 PID TTY          TIME CMD
+  		2177 pts/0    00:00:00 bash
+  		2412 pts/0    00:00:00 forever.sh
+	  	2458 pts/0    00:00:00 sleep
+  		2509 pts/0    00:00:00 ps
+
+Matelo con kill:
+    Comando: kill -9 2412
+    Resultado: [1]+  Killed                  ./forever.sh
+
+Ejecutarlo con nohup:
+    Comando: nohup ./forever.sh > salida.txt 2> salida.err &
+    Resultado: [1] 2663
+
+Cierre terminal y vuelva abrirlo. El proceso sigue corriendo?
+    Comando: ps
+    Resultado: 	PID TTY          TIME CMD
+ 		2740 pts/0    00:00:00 bash
+  		2749 pts/0    00:00:00 ps
+
+    El proceso no sigue corriendo.
+

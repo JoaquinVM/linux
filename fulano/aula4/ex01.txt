@@ -1,0 +1,51 @@
+Procesos del usuario
+    Comando: ps -fu | wc -l
+    Resultado: 43
+
+Procesos de todos los usuarios
+    Comando: ps -fe | wc -l
+    Resultado: 313
+
+Abrir firefox:
+    Comando: firefox &
+    Resultado: [1] 62489
+
+Matar firefox:
+    Comando: kill 62489
+
+Abrir gedit y mandar al segundo plano:
+    Comando: gedit (Ctrl-Z)
+
+Traer gedit al primer plano:
+    Comando: fg
+
+Usar top para ver que procesos consumen mas recursos
+    Comando: top
+    Procesos que usan mas recursos:   
+           
+  	 1596 joaco     20   0 3000412 103284  25880 S  6.2  5.1   1:01.76 gnome-shell 
+ 	62790 joaco     20   0   51316   4092   3284 R  6.2  0.2   0:00.01 top  
+     	    1 root      20   0  160112   5912   3268 S  0.0  0.3   0:05.66 systemd 
+
+   
+
+Usar man top para entender el listado:
+    Columnas:
+	PID: Muestra el id del proceso
+	PR: Prioridad
+	NI: Valor nice
+	VIRT: Espacio de memoria virtual utilizado
+	RES: Direccion de memoria
+	SHR: Espacio de memoria compartido
+	S: Estado del proceso
+	%CPU: Uso de CPU
+	%MEM: Uso de memoria
+	TIME+: Tiempo total de tiempo de procesamiento 
+	COMMAND: Comando usado para comenzar el desarrollo
+
+Matar un proceso con la letra k:
+    Comando: firefox &
+    Resultado: [1] 63203
+    Comando: top
+	     k
+	    PID to signal/kill: 63019
