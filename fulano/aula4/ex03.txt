@@ -1,0 +1,47 @@
+
+¿Cómo se llama su máquina?
+	ubuntu
+
+¿Cuál es la fecha y hora del sistema?
+	Fri Feb 14 03:40:18 PST 2020
+
+
+¿En qué ruta está el comando cp?
+	Comando: which cp
+	Resultado: /bin/cp
+	
+Intente adaptar los 10 ejemplos de usos del comando find para encontrar
+archivos en home (https://e-tinet.com/linux/comando-find-linux/)
+	Comando 1:  find .
+	Comando 2:  find ./joaco -maxdepth 1 -name *.txt
+	Comando 3:  find ./joaco -name 'ex0*' ! -name '*.txt'
+	Comando 4:  find ./joaco -name ex0*
+	Comando 5:  find ./joaco -type f -name "*.txt"
+	Comando 6:  find ./joaco -type f -perm 0440
+	Comando 7:  find . -user joaco
+	Comando 8:  find . -group joaco
+	Comando 9:  find ./joaco -atime 10
+	Comando 10: find ./joaco -size 1M
+
+Vaya a curso e intente encontrar todos los archivos con la extensión .txt en todos los subdirectorios(consulte el manual)
+	Comando: find . -name '*.txt'
+	Resultado: 
+		./aula1/bio.txt
+		./aula1/notas.txt
+		./aula2/ejercicios/ex03.txt
+		./aula2/ejercicios/ex01.txt
+		./aula2/ejercicios/ex02.txt
+		./aula3/nombres.txt
+		./aula3/ex02.txt
+		./aula3/resultado.txt
+		./aula3/tres_primeros.txt
+		./aula3/archivo.txt
+		./aula4/salida.txt
+		./aula4/ex01.txt
+		./aula4/ex02.txt
+
+
+Intente usar el comando find con la opción exec para eliminar archivos con
+.so extensión en /curso/fulano (los creaste en la clase 2)
+	Comando: find . -type f -name "*.so" -exec rm {} \;
+
